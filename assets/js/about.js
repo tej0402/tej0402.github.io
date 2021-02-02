@@ -1,11 +1,21 @@
 const skills=
 [
-    80, //c/c++
-    70, //HTML
-    60, //CSS
-    40, //JS
-    40, //PHP
-    60  //Web Security
+    80, //IS
+    75, //NS
+    80, //WS
+    70, //DF
+    85, //DEVOPS
+    60, //FIREWALLS
+    85,  //VAPT
+    70,  //PYTHON
+    65,  //JAVA
+    80,  //LINUX
+    80,  //WINDOWS
+    65,  //BASH
+    70,  //DATABASES
+    75,  //HTML
+    60,  //JAVASCRIPT
+    75   //PHOTOSHOP
 ];
 
 const skillLength = skills.length;
@@ -14,10 +24,6 @@ function skillPercentage()
 {
     for(i = 0; i< skillLength; i++)
     {   
-        // const elementclass = ".skill" + (i+1);
-        // const element = document.querySelector(elementclass);
-        // element.innerHTML = skills[i] +"%";
-
         const varname = "--skill" +  (i+1);
         document.documentElement.style.setProperty(varname, skills[i] +"%")
     }
