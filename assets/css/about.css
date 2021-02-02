@@ -202,39 +202,39 @@
 {
     max-width: var(--skill7)
 }
-skill8::after
+.skill8::after
 {
     max-width: var(--skill8)
 }
-skill9::after
+.skill9::after
 {
     max-width: var(--skill9)
 }
-skill10::after
+.skill10::after
 {
     max-width: var(--skill10)
 }
-skill11::after
+.skill11::after
 {
     max-width: var(--skill11)
 }
-skill12::after
+.skill12::after
 {
     max-width: var(--skill12)
 }
-skill13::after
+.skill13::after
 {
     max-width: var(--skill13)
 }
-skill14::after
+.skill14::after
 {
     max-width: var(--skill14)
 }
-skill15::after
+.skill15::after
 {
     max-width: var(--skill15)
 }
-skill16::after
+.skill16::after
 {
     max-width: var(--skill16)
 }
