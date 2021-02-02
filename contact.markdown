@@ -3,6 +3,8 @@ layout: default
 title: Contact
 permalink: /contact/
 ---
+
+<style>.button { background-color: #555555; /* Black */ border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; }</style>
 <div style="text-align: center;">
 <span align="center">Have questions? I have answers.</span>
 
