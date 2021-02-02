@@ -3,5 +3,11 @@ layout: about
 title: About
 permalink: /about/
 ---
-I'm currently pursuing my B.E. in Computer Science and Engineering from PSG College of Technology, Coimbatore. I'm an ambivert. Anything related to security and hacking inspires me. I love programming & quotes. I keep all my stuff organized (trying to be a perfectionist). Movies, Series, Youtube, Books and Songs are my free time companions. Sometimes I do hangout with friends & play mobile or PC games too. 
+I worked as a DevOps Engineer and Penetration Tester in a product based company.
+
+Hands-on experience on AWS, GCP, Azure, Digital Ocean, IBM Cloud and Oracle Cloud. I use a considerable part of my spare time to participate in bug bounties and perform freelance security research.
+
+Moreover, I am a self-learner and passionate about Cybersecurity.
+
+Recently, I am trying to get more skilled in binary analysis/exploitation and reverse engineering. 
 

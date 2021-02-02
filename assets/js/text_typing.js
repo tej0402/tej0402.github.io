@@ -1,4 +1,4 @@
-const text = ["Bug Bounty Hunter", "CyberSecurity Enthusiast", "Web Developer", "WebApp Security Enthusiast", "Network Security Enthusiast"]
+const text = ["Ethical Hacker", "DevOps Engineer", "Bug Hunter", "Digital Forensics Enthusiast"]
 let count = 0;
 let index = 0;
 let currentText = "";
@@ -24,12 +24,12 @@ let speed = 250;
         count = (count+1) % text.length;
         index = 0;
         mode = 1;
-	speed = 700;
+	speed = 500;
     }
     else if(letter.length === currentText.length)
     {
         mode = 0;
-        speed = 2000;
+        speed = 1000;
     }
     setTimeout(text_typing, speed);
 }());
