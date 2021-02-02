@@ -1,29 +1,161 @@
-{% include header.html%}
-<link rel="stylesheet" href="/assets//css/intro.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tej Kumar an Ethical Hacker, DevOps Engineer, Bug Hunter, Digital Forensics Enthusiast and Amateur Photographer">
+    <title>About | Tej</title>
+</head>
+<link rel="stylesheet" href="/assets/css/main.css"> 
+<link rel="icon" href="/assets/img/fav.png">
+<link rel="stylesheet" href="/assets/css/about.css" >  
+<link rel="stylesheet" href="/assets/css/main.css"> 
+<link rel="icon" href="/assets/img/fav.png">
+<link rel="stylesheet" href="/assets/css/intro.css">
+
 <body>
-    {% include navbar.html%}
-
+    <nav>
+    <div class="progress-container">
+        <div class="progress-bar"></div>
     </div>
+    <div class="logo">
+        <a href="/">Tej Kumar</a>
+    </div>
+    <ul class="top-navigation-bar">
+        <li class="top-navigation-item"><a href="/">Home</a></li>
+        <li class="top-navigation-item"><a href="/about/">About</a></li>
+        <li class="top-navigation-item"><a href="/blog/">Blog</a></li>
+        <li class="top-navigation-item"><a href="/projects/">Projects</a></li>
+        <li class="top-navigation-item"><a href="/contact/">Contact</a></li>
+    </ul>
+    <div class="nav-icon" >
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+    
+    <div class = "main-container">   
+        <div class="header">
+            <h2>About me</h2>
+        </div>
 
-    <div class="intro-wrap">
-        <div class ="blur">
-            Welcome to my blog!
+        <p>I worked as a DevOps Engineer and Penetration Tester in a product based company.</p>
+
+<p>Hands-on experience on AWS, GCP, Azure, Digital Ocean, IBM Cloud and Oracle Cloud. I use a considerable part of my spare time to participate in bug bounties and perform freelance security research.</p>
+
+<p>Moreover, I am a self-learner and passionate about Cybersecurity.</p>
+
+<p>Recently, I am trying to get more skilled in binary analysis/exploitation and reverse engineering.</p>
+
+
+        <div id="wrapper">
+                <a href="/blog/"><button class="btn dark-btn">Blog</button></a>
+                <a href="/contact/"><button class="btn dark-btn">Contact</button></a>
+          </div>
+       
+
+        <h3>Education</h3>
+        <div class="box fade-out">
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <span class="time">2018</span>
+                    <h3 class="event">Bachelor of Technology - Computer Science and Engineering</h3>
+                    <p class="description">Jawaharlal Nehru Technological University, Anantapur</p>
+                </li>
+            </ul>
         </div>
-        <div class= "intro-start">
-            
-            <div class="intro-content">
-            <h1>
-                Hi, I'm Tej 👋
-            </h1>
-            <h2 class="typing"></h2>
-            <br>
-            <a href="/about/"><button class="btn dark-btn">About Me</button></a>
-            <a href="#Resume Link" target="https://mega.nz/file/2ro30SJQ#tkIeJZJ3l5M-E5vzEFNTkPyJ1chEMh-ihi1OI12Bk-c"><button class="btn light-btn">Download CV</button></a>
+        <br>
+        
+        <h3>Skills</h3>
+        <div class="box">
+            <ul class="skill">
+                <li class="skill-name">Information Security
+                    <div class="skill-bar skill1"></div>
+                </li>
+                <li class="skill-name">Network Security
+                    <div class="skill-bar skill2"></div>
+                </li>
+                <li class="skill-name">Web Security
+                    <div class="skill-bar skill3"></div>
+                </li>
+                <li class="skill-name">Digital Forensics
+                    <div class="skill-bar skill4"></div>
+                </li>
+                <li class="skill-name">DevOps Tools
+                    <div class="skill-bar skill5"></div>
+                </li>
+                <li class="skill-name">Firewalls
+                    <div class="skill-bar skill6"></div>
+                </li>
+                <li class="skill-name">VAPT
+                    <div class="skill-bar skill7"></div>
+                </li>
+                <li class="skill-name">Python
+                    <div class="skill-bar skill8"></div>
+                </li>
+                <li class="skill-name">Java
+                    <div class="skill-bar skill9"></div>
+                </li>
+                <li class="skill-name">Linux
+                    <div class="skill-bar skill10"></div>
+                </li>
+                <li class="skill-name">Windows
+                    <div class="skill-bar skill11"></div>
+                </li>
+                <li class="skill-name">Bash Shell Script
+                    <div class="skill-bar skill12"></div>
+                </li>
+                <li class="skill-name">Databases
+                    <div class="skill-bar skill13"></div>
+                </li>
+                <li class="skill-name">HTML
+                    <div class="skill-bar skill14"></div>
+                </li>
+                <li class="skill-name">Javascript
+                    <div class="skill-bar skill15"></div>
+                </li>
+                <li class="skill-name">Photoshop
+                    <div class="skill-bar skill16"></div>
+                </li>
+            </ul>
         </div>
+        <br>
+        
+        <h3>Achievements</h3> 
+        <div class="box fade-out">
+            <ul class="achievements">
+                <li class="achievement-name">1. Hall of Fame -<a href="https://litmind.com/bughunters">Litmind</a></li>
+                <li class="achievement-name">2. Appreciation Letter - Lightning Insights Inc.</li>
+                <li class="achievement-name">3. Appreciation Certificate - Work India Pvt. Ltd.</li>
+                
+            </ul>
+        </div>
+        <br>
+        <h3>Hobbies</h3>
+        <div class="box fade-out">
+            <ul class="categories">
+                <li class="categories-name"><a href="#">Cooking</a></li>
+                <li class="categories-name"><a href="https://www.instagram.com/iamtejkumar">Photography</a></li>
+                <li class="categories-name"><a href="#">Water Coloring</a></li>
+                <li class="categories-name"><a href="#">Music</a></li>
+                <li class="categories-name"><a href="#">Travelling</a></li>
+            </ul>
         </div>
     </div>
-    {% include footer.html%}
+    
+    <!-- Footer -->
+
+  <div class="footer">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        
+        <p class="copyright text-muted"> Made with ❤️ by <a>Tej</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/about.js"></script>
 </body>
-<script src="/assets/js/text_typing.js"></script>
 </html>
-
