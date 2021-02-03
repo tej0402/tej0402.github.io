@@ -11,7 +11,7 @@ I got this inspiration from (https://twitter.com/#){:target="_blank"}.
 
  <div class="box fade-out" >
             <ul class="ba">
-            <li class="category-name"><a href="_posts/OSINT/"><h3>OSINT</h3></a></li>
+            <li class="category-name"><a href="_posts/OSINT/2021-02-02-Latest-Post.md"><h3>OSINT</h3></a></li>
             <li class="category-name"><a href="/Digital Forensics/"><h3>Digital Forensics</h3></a></li>
             <li class="category-name"><a href="/Bug Bounty/"><h3>Bug Bounty</h3></a></li>
             <li class="category-name"><a href="/Write-ups/"><h3>Write-ups</h3></a></li>
