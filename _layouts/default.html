@@ -1,0 +1,16 @@
+{% include header.html%}
+<link rel="stylesheet" href="/assets/css/blog.css">
+<body>
+    {% include navbar.html%}
+
+    <div class = "main-container">
+        <div class="header">
+            <h2>{{page.title}}</h2>
+        </div>
+        {{content}}
+    </div>
+
+    {% include footer.html%}
+</body>
+</html>
+

@@ -1,0 +1,20 @@
+{% include header.html %}
+<link rel="stylesheet" href="/assets/css/about.css" >  
+<link rel="stylesheet" href="/assets/css/main.css"> 
+<link rel="icon" href="/assets/img/fav.png">
+<link rel="stylesheet" href="/assets/css/intro.css">
+
+<body>
+    {% include navbar.html %}
+    
+    <div class = "main-container">   
+        <div class="header">
+            <h2>{{page.title}}</h2>
+        </div>
+
+        {{content}}
+     </div>   
+     {% include footer.html%}
+<script src="/assets/js/about.js"></script>
+</body>
+</html>

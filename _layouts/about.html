@@ -1,0 +1,116 @@
+{% include header.html %}
+<link rel="stylesheet" href="/assets/css/about.css" >  
+<link rel="stylesheet" href="/assets/css/main.css"> 
+<link rel="icon" href="/assets/img/fav.png">
+<link rel="stylesheet" href="/assets/css/intro.css">
+
+<body>
+    {% include navbar.html %}
+    
+    <div class = "main-container">   
+        <div class="header">
+            <h2>{{page.title}}</h2>
+        </div>
+
+        {{content}}
+        <div id="wrapper">
+                <a href="https://docs.tejkumar.in"><button class="btn dark-btn">Blog</button></a>
+                <a href="/contact/"><button class="btn dark-btn">Contact</button></a>
+                <a href="/certifications/"><button class="btn dark-btn">Certifications</button></a>
+                <a href="/projects/"><button class="btn dark-btn">Projects</button></a>
+          </div>
+       
+
+        <h3>Education</h3>
+        <div class="box fade-out">
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <span class="time">2018</span>
+                    <h3 class="event">Bachelor of Technology - Computer Science and Engineering</h3>
+                    <p class="description">Jawaharlal Nehru Technological University, Anantapur</p>
+                </li>
+            </ul>
+        </div>
+        <br>
+        
+        <h3>Skills</h3>
+        <div class="box">
+            <ul class="skill">
+                <li class="skill-name">Information Security
+                    <div class="skill-bar skill1"></div>
+                </li>
+                <li class="skill-name">Network Security
+                    <div class="skill-bar skill2"></div>
+                </li>
+                <li class="skill-name">Web Security
+                    <div class="skill-bar skill3"></div>
+                </li>
+                <li class="skill-name">Digital Forensics
+                    <div class="skill-bar skill4"></div>
+                </li>
+                <li class="skill-name">DevOps Tools
+                    <div class="skill-bar skill5"></div>
+                </li>
+                <li class="skill-name">Firewalls
+                    <div class="skill-bar skill6"></div>
+                </li>
+                <li class="skill-name">VAPT
+                    <div class="skill-bar skill7"></div>
+                </li>
+                <li class="skill-name">Python
+                    <div class="skill-bar skill8"></div>
+                </li>
+                <li class="skill-name">Java
+                    <div class="skill-bar skill9"></div>
+                </li>
+                <li class="skill-name">Linux
+                    <div class="skill-bar skill10"></div>
+                </li>
+                <li class="skill-name">Windows
+                    <div class="skill-bar skill11"></div>
+                </li>
+                <li class="skill-name">Bash Shell Script
+                    <div class="skill-bar skill12"></div>
+                </li>
+                <li class="skill-name">Databases
+                    <div class="skill-bar skill13"></div>
+                </li>
+                <li class="skill-name">HTML
+                    <div class="skill-bar skill14"></div>
+                </li>
+                <li class="skill-name">Javascript
+                    <div class="skill-bar skill15"></div>
+                </li>
+                <li class="skill-name">Photoshop
+                    <div class="skill-bar skill16"></div>
+                </li>
+            </ul>
+        </div>
+        <br>
+        
+        <h3>Achievements</h3> 
+        <div class="box fade-out">
+            <ul class="achievements">
+                <li class="achievement-name">1. Hall of Fame - <a href="https://litmind.com/bughunters">Litmind</a></li>
+                <li class="achievement-name">2. Appreciation Letter - Lightning Insights Inc.</li>
+                <li class="achievement-name">3. Appreciation Certificate - Work India Pvt. Ltd.</li>
+                
+            </ul>
+        </div>
+        <br>
+        <h3>Hobbies</h3>
+        <div class="box fade-out">
+            <ul class="categories">
+                <li class="categories-name"><a href="#">Cooking</a></li>
+                <li class="categories-name"><a href="https://www.instagram.com/iamtejkumar">Photography</a></li>
+                <li class="categories-name"><a href="#">Water Coloring</a></li>
+                <li class="categories-name"><a href="#">Music</a></li>
+                <li class="categories-name"><a href="#">Travelling</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    {% include footer.html%}
+<script src="/assets/js/about.js"></script>
+</body>
+</html>
