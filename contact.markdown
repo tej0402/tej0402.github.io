@@ -20,7 +20,7 @@ permalink: /contact/
 
  <div class="input-container">
     <i class="fa fa-user icon"></i>
-    <input class="input-field" type="text" placeholder="Enetr Your Name" name="name">
+    <input class="input-field" type="text" placeholder="Enter Your Name" name="name">
   </div>
 
   <div class="input-container">
