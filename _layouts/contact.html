@@ -1,29 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tej Kumar an Ethical Hacker, Bug Hunter, DevOps Engineer, Digital Forensics Enthusiast and Amateur Photographer">
-    <title>Contact | Tej</title>
-</head>
-<style>
-    .button {
-      background-color: #555555; /* Black */
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-    </style>
+{% include header.html %}
+<link rel="stylesheet" href="/assets/css/about.css" >  
 <link rel="stylesheet" href="/assets/css/main.css"> 
 <link rel="icon" href="/assets/img/fav.png">
-<link rel="stylesheet" href="/assets/css/blog.css">
+<link rel="stylesheet" href="/assets/css/intro.css">
 <body>
+  {% include navbar.html%}
     <nav>
     <div class="progress-container">
         <div class="progress-bar"></div>
@@ -38,11 +19,6 @@
         <li class="top-navigation-item"><a href="/projects/">Projects</a></li>
         <li class="top-navigation-item"><a href="/contact/">Contact</a></li>
     </ul>
-    <div class="nav-icon" >
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-    </div>
 </nav>
 
     <div class = "main-container">
@@ -54,10 +30,12 @@
           <div class="col-lg-8 col-md-10 mx-auto">
     
             <p>Ask me anything...I'm just a click away! :)</p>
+      
         
     <form action="https://formkeep.com/f/399e1a2979bd" method="POST">
     
-      <div class="control-group">
+      <div class="input-container">
+        <i class="fa fa-user icon"></i>
         <div class="form-group floating-label-form-group controls">
       <input type="text" name="name" placeholder="Enter your Name" style="height:116px;width:735px">
       <p class="help-block text-danger"></p>
