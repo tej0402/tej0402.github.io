@@ -97,6 +97,19 @@
     color: black;
 }
 
+.btnhome
+{
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: all 250ms ease-in-out;
+    background: rgb(0, 121, 177);
+    color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) 2px solid;
+}
+
 button:focus
 {
     outline: none;
