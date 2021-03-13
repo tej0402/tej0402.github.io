@@ -3,10 +3,10 @@ layout: default
 title: Contact
 permalink: /contact/
 ---
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>.button { background-color: #555555; /* Black */ border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; }</style>
 <div style="text-align: center;">
-<span align="center">Have questions? I have answers.</span>
+<h4>Have questions? I have answers.</h4>
 
 <div style="text-align: center;">
 
@@ -14,29 +14,26 @@ permalink: /contact/
 
 <div class="col-lg-8 col-md-10 mx-auto">
 
-Ask me anything...I'm just a click away! :)
+<h4>Ask me anything...I'm just a click away! :) </h4>
 
 <form action="https://formkeep.com/f/399e1a2979bd" method="POST">
 
-<div class="control-group">
+ <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Enetr Your Name" name="name">
+  </div>
 
-<div class="form-group floating-label-form-group controls"><input type="text" name="name" placeholder="Enter your Name" style="height:116px;width:735px"></div>
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Enter Your Email" name="email">
+  </div>
 
-</div>
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <textarea id="text" name="message" placeholder="Enter Your Message" style="height:116px;width:735px"></textarea>
+  </div>
 
-<div class="control-group">
-
-<div class="form-group floating-label-form-group controls"><input type="email" name="email" placeholder="Your Email" style="height:116px;width:735px"></div>
-
-</div>
-
-<div class="control-group">
-
-<div class="col-75"><textarea id="text" name="message" placeholder="Enter your message" style="height:116px;width:735px"></textarea></div>
-
-</div>
-
-<button type="submit" class="button">Submit</button></form>
+  <button type="submit" class="btn">Submit</button></form>
 
 </div>
 
