@@ -22,9 +22,9 @@
     --font:'Montserrat',sans-serif; /* This will be used for header and footer */
     --mainfont: 'PT Sans','Montserrat',sans-serif;
     --specialfont: 'Lato', 'PT Sans', sans-serif;
-    --color1: #b77dfb;
+    --color1: #41caec;
     --color2: #5668f2;
-    --maincolor: linear-gradient(to right,#b77dfb,#5668f2);
+    --maincolor: linear-gradient(to right,#41caec,#5668f2);
     --greycolor: rgb(121, 121, 121);
     --bluebgcolor: rgb(240, 244, 255);
     --blue : rgb(0, 47, 148);
