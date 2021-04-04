@@ -74,8 +74,8 @@
 
 .dark-btn
 {
-    background: black;
-    color: white;
+    background: rgb(63, 139, 216);
+    color: rgb(8, 8, 8);
 }
 
 .light-btn
