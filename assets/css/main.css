@@ -918,6 +918,6 @@ blockquote > :last-child { margin-bottom: 0; }
 }
 
 img {
-  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-  filter: blur(5px);
+  -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+  filter: blur(0px);
 }
