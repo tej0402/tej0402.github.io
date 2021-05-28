@@ -106,7 +106,7 @@
     cursor: pointer;
     margin-right: 15px;
     transition: all 250ms ease-in-out;
-    background: rgb(0, 121, 177);
+    background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     border: rgb(255, 255, 255) 2px solid;
 }
