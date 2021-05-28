@@ -1,3 +1,4 @@
+@import "main.css";
 .intro-wrap
 {
     width: 100%;
@@ -6,6 +7,7 @@
     padding: 10px 5vw;
     margin-top: 68px;
     font-size: 1.25rem;
+    color: rgb(252, 252, 252);
 }
 
 .blur
@@ -64,17 +66,30 @@
 {
     padding: 10px;
     font-size: 1rem;
-    border: black 2px solid;
+    border: rgb(12, 12, 12) 2px solid;
     border-radius: 30px;
     cursor: pointer;
     margin-right: 15px;
     transition: all 250ms ease-in-out;
 }
 
+.btnhome
+{
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: all 250ms ease-in-out;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) 2px solid;
+}
+
 .dark-btn
 {
-    background: black;
-    color: white;
+    background: rgb(63, 139, 216);
+    color: rgb(8, 8, 8);
 }
 
 .light-btn
