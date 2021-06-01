@@ -1,7 +1,7 @@
 ---
 layout: about
-title: About
-permalink: /about/
+title: About me
+permalink: /aboutme/
 ---
 I worked as a DevOps Engineer and Penetration Tester in a product based company.
 
