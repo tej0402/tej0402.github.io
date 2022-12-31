@@ -5,7 +5,7 @@ permalink: /certifications/
 ---
 
 <blockquote class = "quote">
-    <p class="quote-text">Microsoft Certified Azure Fundamentals - AZ900</p>
+    <p class="quote-text"><a href="https://www.credly.com/badges/1e886220-f7b7-4a2a-a3b8-1692ab136f0b/public_url" target="_blank">Microsoft Certified Azure Fundamentals - AZ900</p>
 </blockquote>
 <blockquote class = "quote">
     <p class="quote-text">Microsoft Certified Security, Compliance, and Identity Fundamentals - SC900</p>
