@@ -5,10 +5,16 @@ permalink: /certifications/
 ---
 
 <blockquote class = "quote">
-    <p class="quote-text">Microsoft Certified Azure Data Fundamentals - DP900<a href="https://www.credly.com/badges/939a1ad7-df34-4b25-ab5a-e0153e3002a7" target="_blank"></p>
+    <p class="quote-text">Microsoft Certified Azure Fundamentals - AZ900</p>
 </blockquote>
 <blockquote class = "quote">
-    <p class="quote-text">Microsoft Certified Azure Fundamentals - AZ900 </p>
+    <p class="quote-text">Microsoft Certified Security, Compliance, and Identity Fundamentals - SC900</p>
+</blockquote>
+<blockquote class = "quote">
+    <p class="quote-text">Microsoft Certified Azure Data Fundamentals - DP900</p>
+</blockquote>
+<blockquote class = "quote">
+    <p class="quote-text">Google Cloud Fundamentals: Core Infrastructure</p>
 </blockquote>
 <blockquote class = "quote">
     <p class="quote-text">DIAT Certified Information Assurance Professional 2021</p>
@@ -27,7 +33,4 @@ permalink: /certifications/
 </blockquote>
 <blockquote class = "quote">
     <p class="quote-text">Splunk 7.x Fundamentals Part 1</p>
-</blockquote>
-<blockquote class = "quote">
-    <p class="quote-text">Intro to DFIR The Divide and Conquer Process</p>
 </blockquote>
