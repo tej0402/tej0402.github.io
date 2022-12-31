@@ -3,11 +3,14 @@ layout: about
 title: About me
 permalink: /aboutme/
 ---
-I worked as a DevOps Engineer and Penetration Tester in a product based company.
+I've around 3 years of experience as a DevSecOps/Cloud Security Engineer role.
 
-Hands-on experience on AWS, GCP, Azure, Digital Ocean, IBM Cloud and Oracle Cloud. I use a considerable part of my spare time to participate in bug bounties and perform freelance security research.
+✅ Performed security assessments on Multi-Cloud Platforms(AWS, Azure, and GCP).
+✅ Security Patch Management, OS Hardening Images, Asset Inventory, Identity Acess Management, and Web Application Firewall.
+✅ Having experience in Compliance(ISO, PCI DSS, GDPR, NIST, and RBI)
+✅ Having Hands-on experience in DevOps/DevSecOps.
 
-Moreover, I am a self-learner and passionate about Cybersecurity.
+I am a positive person having good leadership qualities and always looking forward to working with an organization that provides the opportunity to work on challenging projects that will offer professional growth while being resourceful, innovative, and flexible. 
 
-Recently, I am trying to get more skilled in binary analysis/exploitation and reverse engineering. 
+Moreover, I am a self-learner and passionate about Cyber Security and Automation.
 
