@@ -1,4 +1,4 @@
-const text = ["Ethical Hacker","DevOps\xa0Engineer","Bug Hunter","Digital\xa0Forensics\xa0Enthusiast","Amateur\xa0Photographer"]
+const text = ["Cyber Security Engineer","DevSecOps\xa0Engineer","Amateur\xa0Photographer"]
 let count = 0;
 let index = 0;
 let currentText = "";
