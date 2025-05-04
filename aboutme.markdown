@@ -3,6 +3,11 @@ layout: about
 title: About me
 permalink: /aboutme/
 ---
+<<<<<<< HEAD
+=======
+
+I've around 5 years of experience as a DevSecOps/Cloud Security Engineer role.<br />
+>>>>>>> aca18f3c47b473df22958ad6adeff08b9fd7fe6b
 
 I've around 5 years of experience as a DevSecOps/Cloud Security Engineer role.<br />
 ✅ Performed security assessments on Multi-Cloud Platforms(AWS, Azure, and GCP).<br />
