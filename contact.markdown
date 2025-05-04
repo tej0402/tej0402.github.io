@@ -1,4 +1,8 @@
-<!-- Contact Form HTML for GitHub Pages using EmailJS -->
+---
+layout: default
+title: Contact
+permalink: /contact/
+---
 
 <!DOCTYPE html>
 <html lang="en">
