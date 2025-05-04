@@ -3,9 +3,6 @@ layout: about
 title: About me
 permalink: /aboutme/
 ---
-
-I've around 5 years of experience as a DevSecOps/Cloud Security Engineer role.<br /
-
 I've around 5 years of experience as a DevSecOps/Cloud Security Engineer role.<br />
 ✅ Performed security assessments on Multi-Cloud Platforms(AWS, Azure, and GCP).<br />
 ✅ Security Patch Management, OS Hardening Images, Asset Inventory, Identity Acess Management, PCI and ISO Audits and Web Application Firewall.<br />
