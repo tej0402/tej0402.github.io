@@ -119,7 +119,7 @@ permalink: /contact/
       event.preventDefault();
       emailjs.sendForm('service_ucjzbp8', 'template_98j8uow', this)
         .then(() => {
-          alert('Message sent successfully!');
+          alert('Thank you for reaching out to me. I have received your message and get back to you shortly!');
           this.reset();
         }, (error) => {
           alert('Failed to send message. Please try again.');
