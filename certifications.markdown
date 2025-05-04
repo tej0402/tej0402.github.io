@@ -5,6 +5,12 @@ permalink: /certifications/
 ---
 
 <blockquote class = "quote">
+    <p class="quote-text"><a href="#" target="_blank">ISO 27001 - Lead Auditor</a></p>
+</blockquote>
+<blockquote class = "quote">
+    <p class="quote-text"><a href="#" target="_blank">ISO 27001 - Lead Implementer</a></p>
+</blockquote>
+<blockquote class = "quote">
     <p class="quote-text"><a href="https://www.credly.com/badges/1e886220-f7b7-4a2a-a3b8-1692ab136f0b/public_url" target="_blank">Microsoft Certified Azure Fundamentals - AZ900</a></p>
 </blockquote>
 <blockquote class = "quote">
