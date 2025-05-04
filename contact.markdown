@@ -1,51 +1,129 @@
----
-layout: default
-title: Contact
-permalink: /contact/
----
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>.button { background-color: #555555; /* Black */ border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; }</style>
-<div style="text-align: center;">
-<h4>Have questions? I have answers.</h4>
+<!-- Contact Form HTML for GitHub Pages using EmailJS -->
 
-<div style="text-align: center;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form - tejkumar.in</title>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("1kDAKHzbt5RQNhIoe"); 
+    })();
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      padding: 30px;
+      text-align: center;
+    }
 
-<div class="row">
+    h1 {
+      font-size: 36px;
+      color: #000;
+      margin-bottom: 10px;
+    }
 
-<div class="col-lg-8 col-md-10 mx-auto">
+    p.subtitle {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
 
-<h4>Ask me anything...I'm just a click away! :) </h4>
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
 
-<form action="https://formkeep.com/f/399e1a2979bd" method="POST">
+    .input-group {
+      display: flex;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      overflow: hidden;
+    }
 
- <div class="input-container">
-    <i class="fa fa-user icon"></i>
-    <input class="input-field" type="text" placeholder="Enter Your Name" name="name">
-  </div>
+    .input-group span {
+      background: #2196F3;
+      color: white;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-  <div class="input-container">
-    <i class="fa fa-envelope icon"></i>
-    <input class="input-field" type="text" placeholder="Enter Your Email" name="email">
-  </div>
+    .input-group input,
+    .input-group textarea {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
 
-  <div class="input-container">
-    <i class="fa fa-envelope icon"></i>
-    <textarea id="text" name="message" placeholder="Enter Your Message" style="height:116px;width:735px"></textarea>
-  </div>
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
 
-  <button type="submit" class="btn">Submit</button></form>
+    button {
+      background-color: #2196F3;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
 
-</div>
+    button:hover {
+      background-color: #1976D2;
+    }
+  </style>
+</head>
+<body>
 
-</div>
-</div>
-</div>
+  <h1>Contact</h1>
+  <p class="subtitle">Have questions? I have answers.<br>Ask me anything...I'm just a click away! :)</p>
 
-<div class="footer">
+  <form id="contact-form">
+    <div class="input-group">
+      <span>&#128100;</span>
+      <input type="text" name="from_name" placeholder="Enter Your Name" required>
+    </div>
 
-<div class="row">
+    <div class="input-group">
+      <span>&#128231;</span>
+      <input type="email" name="reply_to" placeholder="Enter Your Email" required>
+    </div>
 
+    <div class="input-group">
+      <span>&#9993;</span>
+      <textarea name="message" placeholder="Enter Your Message" required></textarea>
+    </div>
 
-</div>
+    <button type="submit">Submit</button>
+  </form>
 
-</div>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+        .then(() => {
+          alert('Message sent successfully!');
+          this.reset();
+        }, (error) => {
+          alert('Failed to send message. Please try again.');
+          console.error('EmailJS Error:', error);
+        });
+    });
+  </script>
+
+</body>
+</html>
