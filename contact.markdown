@@ -117,7 +117,7 @@ permalink: /contact/
   <script>
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+      emailjs.sendForm('service_ucjzbp8', 'template_98j8uow', this)
         .then(() => {
           alert('Message sent successfully!');
           this.reset();
