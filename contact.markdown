@@ -4,7 +4,6 @@ title: Contact
 permalink: /contact/
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -93,7 +92,7 @@ permalink: /contact/
 </head>
 <body>
 
-  <h1>Contact</h1>
+
   <p class="subtitle">Have questions? I have answers.<br>Ask me anything...I'm just a click away! :)</p>
 
   <form id="contact-form">
