@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
             let directionX = (Math.random() * 2) - 1; // -1 to 1
             let directionY = (Math.random() * 2) - 1; // -1 to 1
-            let color = 'rgba(139, 92, 246, 0.5)'; // Violet with opacity
+            let color = 'rgba(217, 70, 239, 0.8)'; // Fuchsia with higher opacity
 
             particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
         }
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x)) + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
                 if (distance < (canvas.width / 7) * (canvas.height / 7)) {
                     opacityValue = 1 - (distance / 20000);
-                    ctx.strokeStyle = 'rgba(139, 92, 246,' + opacityValue + ')';
+                    ctx.strokeStyle = 'rgba(217, 70, 239,' + opacityValue + ')';
                     ctx.lineWidth = 1;
                     ctx.beginPath();
                     ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
