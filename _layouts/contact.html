@@ -1,81 +1,88 @@
 {% include header.html %}
-<link rel="stylesheet" href="/assets/css/about.css" >  
-<link rel="stylesheet" href="/assets/css/main.css"> 
+<link rel="stylesheet" href="/assets/css/about.css">
+<link rel="stylesheet" href="/assets/css/main.css">
 <link rel="icon" href="/assets/img/fav.png">
 <link rel="stylesheet" href="/assets/css/intro.css">
+
 <body>
+  <canvas id="particles-canvas"></canvas>
   {% include navbar.html%}
-    <nav>
+  <nav>
     <div class="progress-container">
-        <div class="progress-bar"></div>
+      <div class="progress-bar"></div>
     </div>
     <div class="logo">
-        <a href="/">Tej Kumar</a>
+      <a href="/">Tej Kumar</a>
     </div>
     <ul class="top-navigation-bar">
-        <li class="top-navigation-item"><a href="/">Home</a></li>
-        <li class="top-navigation-item"><a href="/about/">About</a></li>
-        <li class="top-navigation-item"><a href="/blog/">Blog</a></li>
-        <li class="top-navigation-item"><a href="/projects/">Projects</a></li>
-        <li class="top-navigation-item"><a href="/contact/">Contact</a></li>
+      <li class="top-navigation-item"><a href="/">Home</a></li>
+      <li class="top-navigation-item"><a href="/about/">About</a></li>
+      <li class="top-navigation-item"><a href="/blog/">Blog</a></li>
+      <li class="top-navigation-item"><a href="/projects/">Projects</a></li>
+      <li class="top-navigation-item"><a href="/contact/">Contact</a></li>
     </ul>
-</nav>
+  </nav>
 
-    <div class = "main-container">
-        <div class="header">
-            <h2>Contact me</h2>
-            <span align="center">Have questions? I have answers.</span>
-    <div style="text-align: center;">
+  <div class="main-container">
+    <div class="header">
+      <h2>Contact me</h2>
+      <span align="center">Have questions? I have answers.</span>
+      <div style="text-align: center;">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-    
+
             <p>Ask me anything...I'm just a click away! :)</p>
-      
-        
-    <form action="https://formkeep.com/f/399e1a2979bd" method="POST">
-    
-      <div class="input-container">
-        <i class="fa fa-user icon"></i>
-        <div class="form-group floating-label-form-group controls">
-      <input type="text" name="name" placeholder="Enter your Name" style="height:116px;width:735px">
-      <p class="help-block text-danger"></p>
-    </div>
-    </div>
-    <div class="control-group">
-      <div class="form-group floating-label-form-group controls">
-      <input type="email" name="email" placeholder="Your Email" style="height:116px;width:735px">
-      <p class="help-block text-danger"></p>
-    </div>
-    </div>
-    <div class="control-group">
-      
-        <div class="col-75">
-          <textarea id="text" name="message" placeholder="Enter your message" style="height:116px;width:735px"></textarea>
-        </div>
-    
-      </div>
-      <button type="submit" class="button">Submit</button>
-    </form>
-    
+
+
+            <form action="https://formkeep.com/f/399e1a2979bd" method="POST">
+
+              <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <div class="form-group floating-label-form-group controls">
+                  <input type="text" name="name" placeholder="Enter your Name" style="height:116px;width:735px">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <input type="email" name="email" placeholder="Your Email" style="height:116px;width:735px">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+
+                <div class="col-75">
+                  <textarea id="text" name="message" placeholder="Enter your message"
+                    style="height:116px;width:735px"></textarea>
+                </div>
+
+              </div>
+              <button type="submit" class="button">Submit</button>
+            </form>
+
           </div>
         </div>
       </div>
-        </div>
     </div>
+  </div>
 
-    
-    
-    <!-- Footer -->
+
+
+  <!-- Footer -->
 
   <div class="footer">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        
+
         <p class="copyright text-muted"> Made with ❤️ by <a>Tej</a></p>
       </div>
     </div>
   </div>
-</footer>
+  </footer>
+
+  <script src="/assets/js/particles.js"></script>
+  <script src="/assets/js/main.js"></script>
 
 </body>
+
 </html>
