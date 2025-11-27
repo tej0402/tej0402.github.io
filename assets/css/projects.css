@@ -44,8 +44,8 @@
     border-radius: 15px;    
     position: relative;
     padding-bottom: 55%;
-    background-color: black;
-    box-shadow:0 0 5px var(--greycolor);
+    background-color: rgb(12, 12, 12);
+    box-shadow:0 0 50000px var(--greycolor);
     overflow: hidden;
 }
 
@@ -70,9 +70,9 @@
     padding: 1.25rem;
     margin: -2rem auto;
     max-width: 90%;
-    border-radius: 10px;
+    border-radius: 100px;
     box-shadow:0 0 20px var(--greycolor);
-    background-color: white;
+    background-color: rgb(252, 252, 252);
     height: 100%;
     z-index: 10;
 }

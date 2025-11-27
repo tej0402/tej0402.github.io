@@ -6,7 +6,7 @@ const navToggle = () =>
     navicon.addEventListener('click', () =>
     {
         //Toggle Class
-        nav.classList.toggle('top-navigation-bar-active');
+        nav.classList.toggle('active');
 
         //nav item animation
         navItem.forEach((navItem, index) =>

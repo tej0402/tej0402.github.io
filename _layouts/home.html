@@ -1,33 +1,24 @@
-{% include header.html%}
-<link rel="stylesheet" href="/assets/css/intro.css">
-<body>
-    {% include navbar.html%}
+{% include header.html %}
 
-    </div>
+<body>
+    {% include navbar.html %}
 
     <div class="intro-wrap">
-        
-
         <div class="container">
-            <img src="/assets/img/home.jpg" alt="Snow" style="width:100%;">
-            
-        </div>
-
-        <div class= "centered">
-            
             <div class="intro-content">
-            <h1>
-                Hi, I'm Tej 👋
-            </h1>
-            <h2 class="typing"></h2>
-            <br>
-            <a href="/about/"><button class="btn btnhome">About Me</button></a>
-            <a href="https://www.linkedin.com/in/iamtejkumar" target="_blank"><button class="btn btnhome">LinkedIn</button></a>
-        </div>
+                <h1>Hi, I'm Tej 👋</h1>
+                <h2 class="typing"></h2>
+                <div class="mt-2">
+                    <a href="/about/" class="btn btn-primary">About Me</a>
+                    <a href="https://www.linkedin.com/in/iamtejkumar" target="_blank"
+                        class="btn btn-outline">LinkedIn</a>
+                </div>
+            </div>
         </div>
     </div>
-    {% include footer.html%}
-</body>
-<script src="/assets/js/text_typing.js"></script>
-</html>
 
+    {% include footer.html %}
+    <script src="/assets/js/text_typing.js"></script>
+</body>
+
+</html>

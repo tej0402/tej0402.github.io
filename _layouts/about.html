@@ -1,139 +1,120 @@
 {% include header.html %}
-<link rel="stylesheet" href="/assets/css/about.css" >  
-<link rel="stylesheet" href="/assets/css/main.css"> 
-<link rel="icon" href="/assets/img/fav.png">
-<link rel="stylesheet" href="/assets/css/intro.css">
 
 <body>
     {% include navbar.html %}
-    
-    <div class = "main-container">   
+
+    <main class="main-container">
         <div class="header">
-            <h2>{{page.title}}</h2>
+            <h1>{{ page.title }}</h1>
         </div>
 
-        {{content}}
-        <div id="wrapper">
-                <a href="https://docs.tejkumar.in"><button class="btn dark-btn">Blog</button></a>&nbsp;
-                <a href="/contact/"><button class="btn dark-btn">Contact</button></a>&nbsp;
-                <a href="/certifications/"><button class="btn dark-btn">Certifications</button></a>&nbsp;
-                <a href="/projects/"><button class="btn dark-btn">Projects</button></a>
-          </div>
-       
+        {{ content }}
+
+        <div class="text-center mb-2 mt-2">
+            <a href="https://docs.tejkumar.in" class="btn btn-primary">Blog</a>
+            <a href="/contact/" class="btn btn-primary">Contact</a>
+            <a href="/certifications/" class="btn btn-primary">Certifications</a>
+            <a href="/projects/" class="btn btn-primary">Projects</a>
+        </div>
 
         <h3>Education</h3>
-        <div class="box fade-out">
+        <div class="profile-section">
             <ul class="timeline">
                 <li class="timeline-item">
                     <span class="time">2018</span>
-                    <h3 class="event">Bachelor of Technology - Computer Science and Engineering</h3>
+                    <h4 class="event">Bachelor of Technology - Computer Science and Engineering</h4>
                     <p class="description">Jawaharlal Nehru Technological University, Anantapur</p>
                 </li>
             </ul>
         </div>
-        <br>
-        
+
         <h3>Skills</h3>
-        <div class="box">
+        <div class="grid-2 mb-2">
             <ul class="skill">
                 <li class="skill-name">Information Security
-                    <div class="skill-bar skill1"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
                 </li>
                 <li class="skill-name">Network Security
-                    <div class="skill-bar skill2"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
                 </li>
                 <li class="skill-name">Web Security
-                    <div class="skill-bar skill3"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
                 </li>
                 <li class="skill-name">Digital Forensics
-                    <div class="skill-bar skill4"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
                 </li>
+            </ul>
+            <ul class="skill">
                 <li class="skill-name">DevOps Tools
-                    <div class="skill-bar skill5"></div>
-                </li>
-                <li class="skill-name">Firewalls
-                    <div class="skill-bar skill6"></div>
-                </li>
-                <li class="skill-name">VAPT
-                    <div class="skill-bar skill7"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
                 </li>
                 <li class="skill-name">Python
-                    <div class="skill-bar skill8"></div>
-                </li>
-                <li class="skill-name">Java
-                    <div class="skill-bar skill9"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
                 </li>
                 <li class="skill-name">Linux
-                    <div class="skill-bar skill10"></div>
-                </li>
-                <li class="skill-name">Windows
-                    <div class="skill-bar skill11"></div>
-                </li>
-                <li class="skill-name">Bash Shell Script
-                    <div class="skill-bar skill12"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
                 </li>
                 <li class="skill-name">Databases
-                    <div class="skill-bar skill13"></div>
-                </li>
-                <li class="skill-name">HTML
-                    <div class="skill-bar skill14"></div>
-                </li>
-                <li class="skill-name">Javascript
-                    <div class="skill-bar skill15"></div>
-                </li>
-                <li class="skill-name">Photoshop
-                    <div class="skill-bar skill16"></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
                 </li>
             </ul>
         </div>
-        <br>
-        
-        <h3>Achievements</h3> 
-        <div class="box fade-out">
-            <ul class="achievements">
-                <a href="https://litmind.com/bughunters" target="_blank">
-                <div class="category-box">
-                    <img src="/assets/img/hof.png"  alt="quotes-logo">
-                    Hall of Fame - Litmind 
-                </div>
+
+        <h3>Achievements</h3>
+        <div class="grid-2 mb-2">
+            <a href="https://litmind.com/bughunters" target="_blank" class="category-box">
+                <img src="/assets/img/hof.png" alt="Hall of Fame">
+                <h4>Hall of Fame - Litmind</h4>
             </a>
-          
-                <div class="category-box">
-                    <img src="/assets/img/appreciation.jpg"  alt="quotes-logo">
-                    Appreciation Letter - Lightning Insights Inc. 
-                </div>
-           
-        
-                <div class="category-box">
-                    <img src="/assets/img/appreciation.png"  alt="quotes-logo">
-                    Appreciation Certificate - Work India Pvt. Ltd. 
-                </div>           
-            </ul>
+            <div class="category-box">
+                <img src="/assets/img/appreciation.jpg" alt="Appreciation">
+                <h4>Appreciation Letter - Lightning Insights Inc.</h4>
+            </div>
+            <div class="category-box">
+                <img src="/assets/img/appreciation.png" alt="Appreciation">
+                <h4>Appreciation Certificate - Work India Pvt. Ltd.</h4>
+            </div>
         </div>
-        <br>
+
         <h3>Hobbies</h3>
-        <div class="box fade-out categories">
-            
-                <div class="category-box">
-                    <img src="/assets/img/cooking.png"  alt="cooking logo">
-                    Cooking
-                </div>
-                <div class="category-box">
-                    <img src="/assets/img/photography.png"  alt="photography logo">
-                    Photography
-                </div>
-                <div class="category-box">
-                    <img src="/assets/img/watercoloring.png"  alt="watercoloring logo">
-                    Water Coloring
-                </div>
-                <div class="category-box">
-                    <img src="/assets/img/music.png"  alt="music logo">
-                    Music
-                </div>
-    </div>
-    </div>
-    
-    {% include footer.html%}
-<script src="/assets/js/about.js"></script>
+        <div class="grid-2">
+            <div class="category-box">
+                <img src="/assets/img/cooking.png" alt="Cooking">
+                <h4>Cooking</h4>
+            </div>
+            <div class="category-box">
+                <img src="/assets/img/photography.png" alt="Photography">
+                <h4>Photography</h4>
+            </div>
+            <div class="category-box">
+                <img src="/assets/img/watercoloring.png" alt="Water Coloring">
+                <h4>Water Coloring</h4>
+            </div>
+            <div class="category-box">
+                <img src="/assets/img/music.png" alt="Music">
+                <h4>Music</h4>
+            </div>
+        </div>
+    </main>
+
+    {% include footer.html %}
+    <script src="/assets/js/about.js"></script>
 </body>
+
 </html>
