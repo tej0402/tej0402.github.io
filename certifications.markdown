@@ -53,12 +53,6 @@ permalink: /certifications/
         <div class="cert-card">
             <i class="fas fa-search cert-icon"></i>
             <div class="cert-title">Splunk 7.x Fundamentals Part 1</div>
-            <div class="cert-issuer">Splunk</div>
-        </div>
-
-        <!-- DFIR -->
-        <div class="cert-card">
-            <i class="fas fa-fingerprint cert-icon"></i>
 ---
 layout: default
 title: Certifications
