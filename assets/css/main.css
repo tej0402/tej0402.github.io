@@ -292,26 +292,6 @@ nav:hover {
 .intro-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.typing {
-  font-family: 'Courier New', Courier, monospace;
-
-  to {
-    border-color: transparent
-  }
-
-  50% {
-    border-color: var(--accent-color)
-  }
-}
-
-/* Utilities */
-.text-center {
-  text-align: center;
 }
 
 .mt-1 {
