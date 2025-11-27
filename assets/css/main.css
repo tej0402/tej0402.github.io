@@ -40,6 +40,21 @@
 
   /* Transitions */
   --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  /* Global reset to remove dots */
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
   scrollbar-width: none;
   /* Firefox */
   -ms-overflow-style: none;
@@ -253,1174 +268,112 @@ nav:hover {
   margin-bottom: var(--spacing-lg);
   position: relative;
   overflow: hidden;
-}
-
-/* Utilities */
-.text-center {
-  text-align: center;
-}
-
-.mt-1 {
-  margin-top: var(--spacing-sm);
-}
-
-.mt-2 {
-  margin-top: var(--spacing-md);
-}
-
-.mb-1 {
-  margin-bottom: var(--spacing-sm);
-}
-
-.mb-2 {
-  margin-bottom: var(--spacing-md);
-}
-
-/* Progress Bar */
-#progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 4px;
-  background: var(--gradient-main);
-  z-index: 1001;
-  transition: width 0.2s ease;
-}
-
-/* Scroll Up Button */
-#scrollUp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  background: var(--gradient-main);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  box-shadow: var(--shadow-md);
-  z-index: 999;
-  transition: var(--transition-normal);
-}
-
-#scrollUp:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
-}
-
-/* Scroll Animations */
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  will-change: opacity, visibility;
-}
-
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-}
-
-/* Glassmorphism Utilities */
-.glass {
-  background: rgba(30, 41, 59, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Quote Styles for Certifications */
-.quote {
-  background: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid var(--primary-color);
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 0 10px 10px 0;
-  transition: var(--transition-normal);
-}
-
-.quote:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateX(5px);
-}
-
-.quote-text {
-  margin: 0;
-  font-style: italic;
-  color: var(--text-light);
-}
-
-/* Certifications Section */
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-md);
-  margin-top: var(--spacing-md);
-  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
-}
-
-.cert-card:hover::before {
-  opacity: 1;
-}
-
-.cert-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-sm);
-  background: var(--gradient-main);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.cert-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-color);
-  margin-bottom: var(--spacing-xs);
-}
-
-.cert-issuer {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  font-style: italic;
-}
-
-.main-container {
-  max-width: 1200px;
-  margin: 80px auto var(--spacing-lg);
-  padding: 0 var(--spacing-sm);
-  width: 100%;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.skill-bar {
-  height: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  overflow: hidden;
-  margin-top: 5px;
-  margin-bottom: var(--spacing-sm);
-}
-
-.skill-progress {
-  height: 100%;
-  background: var(--gradient-main);
-  border-radius: 5px;
-  width: 0;
-  transition: width 1.5s ease-out;
-}
-
-/* Grid Layouts */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--spacing-md);
-}
-
-.card,
-.category-box {
-  background: var(--bg-secondary);
+  border-radius: 20px;
   padding: var(--spacing-md);
-  border-radius: 10px;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition-normal);
-  border: 1px solid var(--border-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.card:hover,
-.category-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
-  border-color: var(--primary-color);
-}
-
-.category-box img {
-  height: 60px;
-  margin-bottom: var(--spacing-sm);
-}
-
-/* Utilities */
-.text-center {
-  text-align: center;
-}
-
-.mt-1 {
-  margin-top: var(--spacing-sm);
-}
-
-.mt-2 {
-  margin-top: var(--spacing-md);
-}
-
-.mb-1 {
-  margin-bottom: var(--spacing-sm);
-}
-
-.mb-2 {
-  margin-bottom: var(--spacing-md);
-}
-
-/* Progress Bar */
-#progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 4px;
-  background: var(--gradient-main);
-  z-index: 1001;
-  transition: width 0.2s ease;
-}
-
-/* Scroll Up Button */
-#scrollUp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  background: var(--gradient-main);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  box-shadow: var(--shadow-md);
-  z-index: 999;
-  transition: var(--transition-normal);
-}
-
-#scrollUp:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
-}
-
-/* Scroll Animations */
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  will-change: opacity, visibility;
-}
-
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-}
-
-/* Glassmorphism Utilities */
-.glass {
-  background: rgba(30, 41, 59, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Quote Styles for Certifications */
-.quote {
-  background: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid var(--primary-color);
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 0 10px 10px 0;
-  transition: var(--transition-normal);
-}
-
-.quote:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateX(5px);
-}
-
-.quote-text {
-  margin: 0;
-  font-style: italic;
-  color: var(--text-light);
-}
-
-/* Certifications Section */
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-md);
-  margin-top: var(--spacing-md);
-  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
-}
-
-.cert-card:hover::before {
-  opacity: 1;
-}
-
-.cert-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-sm);
-  background: var(--gradient-main);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.cert-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-color);
-  margin-bottom: var(--spacing-xs);
-}
-
-.cert-issuer {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  font-style: italic;
-}
-
-.main-container {
-  max-width: 1200px;
-  margin: 80px auto var(--spacing-lg);
-  padding: 0 var(--spacing-sm);
-  width: 100%;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.skill-bar {
-  height: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  overflow: hidden;
-  margin-top: 5px;
-  margin-bottom: var(--spacing-sm);
-}
-
-.skill-progress {
-  height: 100%;
-  background: var(--gradient-main);
-  border-radius: 5px;
-  width: 0;
-  transition: width 1.5s ease-out;
-}
-
-/* Grid Layouts */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--spacing-md);
-}
-
-.card,
-.category-box {
-  background: var(--bg-secondary);
-  padding: var(--spacing-md);
-  border-radius: 10px;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition-normal);
-  border: 1px solid var(--border-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.card:hover,
-.category-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
-  border-color: var(--primary-color);
-}
-
-.category-box img {
-  height: 60px;
-  margin-bottom: var(--spacing-sm);
-}
-
-/* Utilities */
-.text-center {
-  text-align: center;
-}
-
-.mt-1 {
-  margin-top: var(--spacing-sm);
-}
-
-.mt-2 {
-  margin-top: var(--spacing-md);
-}
-
-.mb-1 {
-  margin-bottom: var(--spacing-sm);
-}
-
-.mb-2 {
-  margin-bottom: var(--spacing-md);
-}
-
-/* Progress Bar */
-#progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 4px;
-  background: var(--gradient-main);
-  z-index: 1001;
-  transition: width 0.2s ease;
-}
-
-/* Scroll Up Button */
-#scrollUp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  background: var(--gradient-main);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  box-shadow: var(--shadow-md);
-  z-index: 999;
-  transition: var(--transition-normal);
-}
-
-#scrollUp:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
-}
-
-/* Scroll Animations */
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  will-change: opacity, visibility;
-}
-
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-}
-
-/* Glassmorphism Utilities */
-.glass {
-  background: rgba(30, 41, 59, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Quote Styles for Certifications */
-.quote {
-  background: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid var(--primary-color);
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 0 10px 10px 0;
-  transition: var(--transition-normal);
-}
-
-.quote:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateX(5px);
-}
-
-.quote-text {
-  margin: 0;
-  font-style: italic;
-  color: var(--text-light);
-}
-
-/* Certifications Section */
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-md);
-  margin-top: var(--spacing-md);
-  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
-}
-
-.cert-card:hover::before {
-  opacity: 1;
-}
-
-.cert-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-sm);
-  background: var(--gradient-main);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.cert-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-color);
-  margin-bottom: var(--spacing-xs);
-}
-
-.cert-issuer {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  font-style: italic;
-}
-
-.main-container {
-  max-width: 1200px;
-  margin: 80px auto var(--spacing-lg);
-  padding: 0 var(--spacing-sm);
-  width: 100%;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.skill-bar {
-  height: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  overflow: hidden;
-  margin-top: 5px;
-  margin-bottom: var(--spacing-sm);
-}
-
-.skill-progress {
-  height: 100%;
-  background: var(--gradient-main);
-  border-radius: 5px;
-  width: 0;
-  transition: width 1.5s ease-out;
-}
-
-/* Grid Layouts */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--spacing-md);
-}
-
-.card,
-.category-box {
-  background: var(--bg-secondary);
-  padding: var(--spacing-md);
-  border-radius: 10px;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition-normal);
-  border: 1px solid var(--border-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.card:hover,
-.category-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
-  border-color: var(--primary-color);
-}
-
-.category-box img {
-  height: 60px;
-  margin-bottom: var(--spacing-sm);
-}
-
-/* Utilities */
-.text-center {
-  text-align: center;
-}
-
-.mt-1 {
-  margin-top: var(--spacing-sm);
-}
-
-.mt-2 {
-  margin-top: var(--spacing-md);
-}
-
-.mb-1 {
-  margin-bottom: var(--spacing-sm);
-}
-
-.mb-2 {
-  margin-bottom: var(--spacing-md);
-}
-
-/* Progress Bar */
-#progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 4px;
-  background: var(--gradient-main);
-  z-index: 1001;
-  transition: width 0.2s ease;
-}
-
-/* Scroll Up Button */
-#scrollUp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  background: var(--gradient-main);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  box-shadow: var(--shadow-md);
-  z-index: 999;
-  transition: var(--transition-normal);
-}
-
-#scrollUp:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
-}
-
-/* Scroll Animations */
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  will-change: opacity, visibility;
-}
-
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-}
-
-/* Glassmorphism Utilities */
-.glass {
-  background: rgba(30, 41, 59, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Quote Styles for Certifications */
-.quote {
-  background: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid var(--primary-color);
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 0 10px 10px 0;
-  transition: var(--transition-normal);
-}
-
-.quote:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateX(5px);
-}
-
-.quote-text {
-  margin: 0;
-  font-style: italic;
-  color: var(--text-light);
-}
-
-/* Certifications Section */
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-md);
-  margin-top: var(--spacing-md);
-  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
-}
-
-.cert-card:hover::before {
-  opacity: 1;
-}
-
-.cert-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-sm);
-  background: var(--gradient-main);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.cert-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-color);
-  margin-bottom: var(--spacing-xs);
-}
-
-.cert-issuer {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  font-style: italic;
-}
-
-.main-container {
-  max-width: 1200px;
-  margin: 80px auto var(--spacing-lg);
-  padding: 0 var(--spacing-sm);
-  width: 100%;
-  flex: 1;
-  position: relative;
   z-index: 1;
 }
 
-/* Canvas Background */
-#particles-canvas,
-#cyber-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  /* Behind body content */
-  pointer-events: none;
-  border-radius: 5px;
-  width: 0;
-  transition: width 1.5s ease-out;
-}
-
-/* Grid Layouts */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--spacing-md);
-}
-
-.card,
-.category-box {
-  background: var(--bg-secondary);
-  padding: var(--spacing-md);
-  border-radius: 10px;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition-normal);
-  border: 1px solid var(--border-color);
+.intro-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-}
-
-.card:hover,
-.category-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
-  border-color: var(--primary-color);
-}
-
-.category-box img {
-  height: 60px;
-  margin-bottom: var(--spacing-sm);
-}
-
-/* Utilities */
-.text-center {
-  text-align: center;
-}
-
-.mt-1 {
-  margin-top: var(--spacing-sm);
-}
-
-.mt-2 {
-  margin-top: var(--spacing-md);
-}
-
-.mb-1 {
-  margin-bottom: var(--spacing-sm);
-}
-
-.mb-2 {
-  margin-bottom: var(--spacing-md);
-}
-
-/* Progress Bar */
-#progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 4px;
-  background: var(--gradient-main);
-  z-index: 1001;
-  transition: width 0.2s ease;
-}
-
-/* Scroll Up Button */
-#scrollUp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  background: var(--gradient-main);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  box-shadow: var(--shadow-md);
-  z-index: 999;
-  transition: var(--transition-normal);
-}
-
-#scrollUp:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
-}
-
-/* Scroll Animations */
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  will-change: opacity, visibility;
-}
-
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-}
-
-/* Glassmorphism Utilities */
-.glass {
-  background: rgba(30, 41, 59, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Quote Styles for Certifications */
-.quote {
-  background: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid var(--primary-color);
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 0 10px 10px 0;
-  transition: var(--transition-normal);
-}
-
-.quote:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateX(5px);
-}
-
-.quote-text {
-  margin: 0;
-  font-style: italic;
-  color: var(--text-light);
-}
-
-/* Certifications Section */
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-md);
-  margin-top: var(--spacing-md);
-  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
-}
-
-.cert-card:hover::before {
-  opacity: 1;
-}
-
-.cert-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-sm);
-  background: var(--gradient-main);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.cert-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-color);
-  margin-bottom: var(--spacing-xs);
-}
-
-.cert-issuer {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  font-style: italic;
-}
-
-.main-container {
-  max-width: 1200px;
-  margin: 80px auto var(--spacing-lg);
-  padding: 0 var(--spacing-sm);
   width: 100%;
-  flex: 1;
-  position: relative;
-  z-index: 1;
 }
 
-/* Canvas Background */
-#particles-canvas,
-#cyber-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  /* Behind body content */
-  pointer-events: none;
-  border-radius: 5px;
-  width: 0;
-  transition: width 1.5s ease-out;
-}
-
-/* Grid Layouts */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--spacing-md);
-}
-
-.card,
-.category-box {
-  background: var(--bg-secondary);
-  padding: var(--spacing-md);
-  border-radius: 10px;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition-normal);
-  border: 1px solid var(--border-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.card:hover,
-.category-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
-  border-color: var(--primary-color);
-}
-
-.category-box img {
-  height: 60px;
-  margin-bottom: var(--spacing-sm);
-}
-
-/* Utilities */
-.text-center {
-  text-align: center;
-}
-
-.mt-1 {
-  margin-top: var(--spacing-sm);
-}
-
-.mt-2 {
-  margin-top: var(--spacing-md);
-}
-
-.mb-1 {
-  margin-bottom: var(--spacing-sm);
-}
-
-.mb-2 {
-  margin-bottom: var(--spacing-md);
-}
-
-/* Progress Bar */
-#progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 4px;
-  background: var(--gradient-main);
-  z-index: 1001;
-  transition: width 0.2s ease;
-}
-
-/* Scroll Up Button */
-#scrollUp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  background: var(--gradient-main);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  box-shadow: var(--shadow-md);
-  z-index: 999;
-  transition: var(--transition-normal);
-}
-
-#scrollUp:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
-}
-
-/* Scroll Animations */
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  will-change: opacity, visibility;
-}
-
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-}
-
-/* Glassmorphism Utilities */
-.glass {
-  background: rgba(30, 41, 59, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Quote Styles for Certifications */
-.quote {
-  background: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid var(--primary-color);
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 0 10px 10px 0;
-  transition: var(--transition-normal);
-}
-
-.quote:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateX(5px);
-}
-
-.quote-text {
-  margin: 0;
-  font-style: italic;
-  color: var(--text-light);
-}
-
-/* Certifications Section */
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-md);
-  margin-top: var(--spacing-md);
-  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
-}
-
-.cert-card:hover::before {
-  opacity: 1;
-}
-
-.cert-icon {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-sm);
-  background: var(--gradient-main);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.cert-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-color);
-  margin-bottom: var(--spacing-xs);
-}
-
-.cert-issuer {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  font-style: italic;
-}
-
-.main-container {
-  max-width: 1200px;
-  margin: 80px auto var(--spacing-lg);
-  padding: 0 var(--spacing-sm);
-  width: 100%;
-  flex: 1;
-  position: relative;
-  z-index: 1;
-}
-
-/* Canvas Background */
-#particles-canvas,
-#cyber-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  /* Behind body content */
-  pointer-events: none;
-  /* Blur and dim the background for better text readability */
-  filter: blur(3px);
-  opacity: 0.4;
-}
-
-/* Compact About Page */
-.about-page {
-  margin-top: 60px !important;
-  margin-bottom: 2rem !important;
-  max-width: 1000px;
-  /* Constrain overall width */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.about-page .btn {
-  margin: 0 0.5rem;
-  /* Gap between buttons */
-}
-
-.about-page h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+.typing {
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--accent-color);
+  text-shadow: 0 0 10px var(--accent-color);
+  border-right: 3px solid var(--accent-color);
+  padding-right: 5px;
+  animation: blink 0.75s step-end infinite;
   font-size: 1.8rem;
-  text-align: left;
-  /* Align headings to the left to match content */
+  font-weight: 700;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: var(--accent-color)
+  }
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: var(--spacing-sm);
+}
+
+.mt-2 {
+  margin-top: var(--spacing-md);
+}
+
+.mb-1 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Progress Bar */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
   background: var(--gradient-main);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: block;
-  /* Ensure it takes up space to center */
-  width: 100%;
-  max-width: 800px;
+  z-index: 1001;
+  transition: width 0.2s ease;
+}
+
+/* Scroll Up Button */
+#scrollUp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: var(--gradient-main);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: var(--shadow-md);
+  z-index: 999;
+  transition: var(--transition-normal);
+}
+
+#scrollUp:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Scroll Animations */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
   opacity: 1;
   transform: none;
 }
@@ -1461,6 +414,44 @@ nav:hover {
   gap: var(--spacing-md);
   margin-top: var(--spacing-md);
   box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+}
+
+.cert-card {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.cert-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(139, 92, 246, 0.4);
+  border-color: var(--accent-color);
+  z-index: 10;
+  background: rgba(30, 41, 59, 0.8);
 }
 
 .cert-card:hover::before {
@@ -1550,11 +541,10 @@ nav:hover {
 }
 
 .about-page p {
-  max-width: 800px;
-  margin: 0 auto 1rem auto;
-  text-align: justify;
+  margin: 0 0 1rem 0;
   line-height: 1.6;
-  font-size: 1.05rem;
+  font-size: 1rem;
+  color: var(--text-color);
 }
 
 .about-page .timeline,
@@ -1574,12 +564,22 @@ nav:hover {
   gap: 1rem;
 }
 
-left: 9px;
-top: 5px;
-bottom: 0;
-width: 2px;
-background: var(--gradient-main);
-border-radius: 2px;
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 5px;
+  bottom: 0;
+  width: 2px;
+  background: var(--gradient-main);
+  border-radius: 2px;
 }
 
 .timeline-item {
@@ -1629,29 +629,32 @@ border-radius: 2px;
   font-size: 1.1rem;
 }
 
+/* Enhanced Skills Styles */
 .skill-bar {
-  height: 15px;
-  /* Increased size */
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  height: 25px;
+  /* Much larger */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
   overflow: hidden;
-  margin-top: 5px;
-  margin-bottom: var(--spacing-sm);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 8px;
+  margin-bottom: var(--spacing-md);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(139, 92, 246, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
 }
 
 .skill-progress {
   height: 100%;
-  background: var(--gradient-main);
-  border-radius: 10px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  border-radius: 15px;
   width: 0;
-  transition: width 1.5s ease-out;
-  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 20px var(--primary-color);
   position: relative;
+  overflow: hidden;
 }
 
-/* Striped animation for skills */
+/* Fancy Shine Effect */
 .skill-progress::after {
   content: '';
   position: absolute;
@@ -1659,25 +662,59 @@ border-radius: 2px;
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: linear-gradient(45deg,
-      rgba(255, 255, 255, 0.15) 25%,
-      transparent 25%,
-      transparent 50%,
-      rgba(255, 255, 255, 0.15) 50%,
-      rgba(255, 255, 255, 0.15) 75%,
-      transparent 75%,
-      transparent);
-  background-size: 1rem 1rem;
-  animation: moveStripes 1s linear infinite;
-  border-radius: 10px;
+  background: linear-gradient(45deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  background-size: 200% 200%;
+  animation: shine 2s infinite linear;
 }
 
-@keyframes moveStripes {
-  from {
-    background-position: 0 0;
+@keyframes shine {
+  0% {
+    background-position: 200% 50%;
   }
 
-  to {
-    background-position: 1rem 0;
+  100% {
+    background-position: -200% 50%;
   }
+}
+
+/* Override for Skills Width */
+.about-page .skill {
+  max-width: 100% !important;
+  padding: 0 10px;
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.card,
+.category-box {
+  background: var(--bg-secondary);
+  padding: var(--spacing-md);
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover,
+.category-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  border-color: var(--primary-color);
+}
+
+.category-box img {
+  height: 60px;
+  margin-bottom: var(--spacing-sm);
 }
