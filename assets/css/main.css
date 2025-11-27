@@ -255,6 +255,80 @@ nav:hover {
   color: var(--primary-color);
 }
 
+/* Hero Section (Home) */
+.intro-wrap {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: var(--spacing-md);
+  z-index: 1;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.typing {
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--accent-color);
+  text-shadow: 0 0 10px var(--accent-color);
+  border-right: 3px solid var(--accent-color);
+  padding-right: 5px;
+  animation: blink 0.75s step-end infinite;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: var(--accent-color)
+  }
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  border-left: 2px solid var(--border-color);
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -37px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  border: 2px solid var(--bg-color);
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
 .time {
   color: var(--accent-color);
   font-size: 0.9rem;
