@@ -38,23 +38,6 @@
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
 
-  /* Transitions */
-  --transition-fast: 0.2s ease;
-  --transition-normal: 0.3s ease;
-}
-
-/* Reset & Base */
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading);
-  color: var(--text-color);
-  margin-bottom: var(--spacing-sm);
-}
-
-h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
   background: var(--gradient-main);
   background-clip: text;
   -webkit-background-clip: text;
