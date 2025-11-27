@@ -299,62 +299,6 @@ nav:hover {
     border-color: transparent
   }
 
-  50% {
-    border-color: var(--accent-color)
-  }
-}
-
-/* Timeline */
-.timeline {
-  position: relative;
-  padding-left: 30px;
-  border-left: 2px solid var(--border-color);
-}
-
-.timeline-item {
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -37px;
-  top: 5px;
-  width: 14px;
-  height: 14px;
-  background: var(--primary-color);
-  border-radius: 50%;
-  border: 2px solid var(--bg-color);
-  box-shadow: 0 0 0 2px var(--primary-color);
-}
-
-.time {
-  color: var(--accent-color);
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.skill-bar {
-  height: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  overflow: hidden;
-  margin-top: 5px;
-  margin-bottom: var(--spacing-sm);
-}
-
-.skill-progress {
-  height: 100%;
-  background: var(--gradient-main);
-  border-radius: 5px;
-  width: 0;
-  transition: width 1.5s ease-out;
-}
-
-/* Grid Layouts */
-.grid-2 {
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--spacing-md);
 }
