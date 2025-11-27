@@ -336,23 +336,6 @@ nav:hover {
   height: 10px;
   background: var(--bg-secondary);
   border-radius: 5px;
-  overflow: hidden;
-  margin-top: 5px;
-  margin-bottom: var(--spacing-sm);
-}
-
-.skill-progress {
-  height: 100%;
-  background: var(--gradient-main);
-  border-radius: 5px;
-  width: 0;
-  transition: width 1s ease-out;
-}
-
-/* Grid Layouts */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--spacing-md);
 }
 
