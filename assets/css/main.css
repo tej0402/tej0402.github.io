@@ -310,44 +310,11 @@ nav:hover {
 /* Pulsing Gradient Overlay */
 .intro-wrap::after {
   content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* Much more transparent gradient */
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.3), rgba(139, 92, 246, 0.2), rgba(6, 182, 212, 0.2));
-  z-index: -1;
-  animation: gradientPulse 8s ease infinite alternate;
 }
 
-@keyframes kenBurns {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1.15);
-  }
-}
-
-@keyframes gradientPulse {
-  0% {
-    opacity: 0.3;
-  }
-
-  100% {
-    opacity: 0.6;
-  }
-}
-
-.profile-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid white;
-  box-shadow: var(--shadow-md);
+object-fit: cover;
+border: 4px solid white;
+box-shadow: var(--shadow-md);
 }
 
 .timeline {
