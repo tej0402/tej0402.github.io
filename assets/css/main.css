@@ -218,35 +218,6 @@ nav:hover {
 .social-media {
   display: flex;
   justify-content: center;
-  gap: var(--spacing-sm);
-  list-style: none;
-  margin-bottom: var(--spacing-sm);
-}
-
-.social-media-icon a {
-  color: var(--text-light);
-  font-size: 1.5rem;
-  transition: var(--transition-normal);
-}
-
-align-items: center;
-justify-content: center;
-text-align: center;
-gap: var(--spacing-md);
-margin-bottom: var(--spacing-lg);
-position: relative;
-overflow: hidden;
-border-radius: 20px;
-padding: var(--spacing-md);
-box-shadow: var(--shadow-lg);
-border: 1px solid rgba(255, 255, 255, 0.1);
-z-index: 1;
-}
-
-/* Animated Background Image */
-.intro-wrap::before {
-  content: '';
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
