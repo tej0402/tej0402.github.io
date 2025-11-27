@@ -5,7 +5,7 @@ permalink: /certifications/
 ---
 
 <div class="main-container fade-in-section">
-    <h2 class="text-center mb-2">My Certifications</h2>
+
     <div class="cert-grid">
         <!-- DIAT -->
         <div class="cert-card">
