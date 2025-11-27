@@ -295,192 +295,179 @@ nav:hover {
 /* Animated Background Image */
 .intro-wrap::before {
   content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('../img/home.jpg');
-  background-size: cover;
-}
 
-.timeline-item {
-  position: relative;
-  margin-bottom: var(--spacing-md);
-}
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -36px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    border: 3px solid white;
+    box-shadow: var(--shadow-sm);
+  }
 
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -36px;
-  top: 5px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: var(--primary-color);
-  border: 3px solid white;
-  box-shadow: var(--shadow-sm);
-}
+  .time {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 600;
+  }
 
-.time {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  font-weight: 600;
-}
+  .skill-bar {
+    height: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    /* Visible background for empty bar */
+    border-radius: 5px;
+    overflow: hidden;
+    /* Ensure progress bar stays inside */
+    margin-top: 5px;
+    margin-bottom: var(--spacing-sm);
+  }
 
-.skill-bar {
-  height: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  /* Visible background for empty bar */
-  border-radius: 5px;
-  overflow: hidden;
-  /* Ensure progress bar stays inside */
-  margin-top: 5px;
-  margin-bottom: var(--spacing-sm);
-}
+  .skill-progress {
+    height: 100%;
+    background: var(--gradient-main);
+    border-radius: 5px;
+    width: 0;
+    /* Start at 0 for animation */
+    transition: width 1.5s ease-out;
+    /* Smooth animation */
+  }
 
-.skill-progress {
-  height: 100%;
-  background: var(--gradient-main);
-  border-radius: 5px;
-  width: 0;
-  /* Start at 0 for animation */
-  transition: width 1.5s ease-out;
-  /* Smooth animation */
-}
+  /* Grid Layouts */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+  }
 
-/* Grid Layouts */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--spacing-md);
-}
+  .card,
+  .category-box {
+    background: var(--bg-secondary);
+    padding: var(--spacing-md);
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-.card,
-.category-box {
-  background: var(--bg-secondary);
-  padding: var(--spacing-md);
-  border-radius: 10px;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition-normal);
-  border: 1px solid var(--border-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
+  .card:hover,
+  .category-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+    /* Violet glow */
+    border-color: var(--primary-color);
+  }
 
-.card:hover,
-.category-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
-  /* Violet glow */
-  border-color: var(--primary-color);
-}
+  .category-box img {
+    height: 60px;
+    margin-bottom: var(--spacing-sm);
+  }
 
-.category-box img {
-  height: 60px;
-  margin-bottom: var(--spacing-sm);
-}
+  /* Utilities */
+  .text-center {
+    text-align: center;
+  }
 
-/* Utilities */
-.text-center {
-  text-align: center;
-}
+  .mt-1 {
+    margin-top: var(--spacing-sm);
+  }
 
-.mt-1 {
-  margin-top: var(--spacing-sm);
-}
+  .mt-2 {
+    margin-top: var(--spacing-md);
+  }
 
-.mt-2 {
-  margin-top: var(--spacing-md);
-}
+  .mb-1 {
+    margin-bottom: var(--spacing-sm);
+  }
 
-.mb-1 {
-  margin-bottom: var(--spacing-sm);
-}
+  .mb-2 {
+    margin-bottom: var(--spacing-md);
+  }
 
-.mb-2 {
-  margin-bottom: var(--spacing-md);
-}
+  /* Progress Bar */
+  #progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: var(--gradient-main);
+    z-index: 1001;
+    transition: width 0.2s ease;
+  }
 
-/* Progress Bar */
-#progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 4px;
-  background: var(--gradient-main);
-  z-index: 1001;
-  transition: width 0.2s ease;
-}
+  /* Scroll Up Button */
+  #scrollUp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-main);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: var(--shadow-md);
+    z-index: 999;
+    transition: var(--transition-normal);
+  }
 
-/* Scroll Up Button */
-#scrollUp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  background: var(--gradient-main);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  box-shadow: var(--shadow-md);
-  z-index: 999;
-  transition: var(--transition-normal);
-}
+  #scrollUp:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+  }
 
-#scrollUp:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
-}
+  /* Scroll Animations */
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, visibility;
+  }
 
-/* Scroll Animations */
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  will-change: opacity, visibility;
-}
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+  }
 
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-}
+  /* Glassmorphism Utilities */
+  .glass {
+    background: rgba(30, 41, 59, 0.7);
+    /* Semi-transparent slate 800 */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 
-/* Glassmorphism Utilities */
-.glass {
-  background: rgba(30, 41, 59, 0.7);
-  /* Semi-transparent slate 800 */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
+  /* Quote Styles for Certifications */
+  .quote {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--primary-color);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 0 10px 10px 0;
+    transition: var(--transition-normal);
+  }
 
-/* Quote Styles for Certifications */
-.quote {
-  background: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid var(--primary-color);
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 0 10px 10px 0;
-  transition: var(--transition-normal);
-}
+  .quote:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+  }
 
-.quote:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateX(5px);
-}
-
-.quote-text {
-  margin: 0;
-  font-style: italic;
-  color: var(--text-light);
-}
+  .quote-text {
+    margin: 0;
+    font-style: italic;
+    color: var(--text-light);
+  }
