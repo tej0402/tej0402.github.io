@@ -229,62 +229,18 @@ nav:hover {
   transition: var(--transition-normal);
 }
 
-.social-media-icon a:hover {
-  color: var(--primary-color);
-  transform: translateY(-2px);
-}
-
-/* Components */
-.btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  border-radius: 50px;
-  font-weight: 600;
-  text-align: center;
-  cursor: pointer;
-  transition: var(--transition-normal);
-  border: 2px solid transparent;
-  text-decoration: none;
-}
-
-.btn-primary {
-  background: var(--gradient-main);
-  color: white;
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  color: white;
-}
-
-.btn-outline {
-  background: transparent;
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-}
-
-.btn-outline:hover {
-  background: var(--primary-color);
-  color: white;
-}
-
-/* Hero Section (Home) */
-.intro-wrap {
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: var(--spacing-md);
-  margin-bottom: var(--spacing-lg);
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  padding: var(--spacing-md);
-  box-shadow: var(--shadow-lg);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  z-index: 1;
+align-items: center;
+justify-content: center;
+text-align: center;
+gap: var(--spacing-md);
+margin-bottom: var(--spacing-lg);
+position: relative;
+overflow: hidden;
+border-radius: 20px;
+padding: var(--spacing-md);
+box-shadow: var(--shadow-lg);
+border: 1px solid rgba(255, 255, 255, 0.1);
+z-index: 1;
 }
 
 /* Animated Background Image */
@@ -327,22 +283,6 @@ nav:hover {
 }
 
 .time {
-  font-size: 0.9rem;
-  color: var(--text-light);
-  font-weight: 600;
-}
-
-.skill-bar {
-  height: 10px;
-  background: var(--bg-secondary);
-  border-radius: 5px;
-  gap: var(--spacing-md);
-}
-
-.card,
-.category-box {
-  background: var(--bg-secondary);
-  padding: var(--spacing-md);
   border-radius: 10px;
   box-shadow: var(--shadow-sm);
   transition: var(--transition-normal);
