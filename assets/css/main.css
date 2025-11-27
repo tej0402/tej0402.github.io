@@ -299,20 +299,7 @@ nav:hover {
 
 .typing {
   font-family: 'Courier New', Courier, monospace;
-  color: var(--accent-color);
-  text-shadow: 0 0 10px var(--accent-color);
-  border-right: 3px solid var(--accent-color);
-  padding-right: 5px;
-  animation: blink 0.75s step-end infinite;
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-top: 0.5rem;
-  display: inline-block;
-}
 
-@keyframes blink {
-
-  from,
   to {
     border-color: transparent
   }
