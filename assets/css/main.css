@@ -691,21 +691,6 @@ nav:hover {
     background-position: 200% 50%;
   }
 
-  100% {
-    background-position: -200% 50%;
-  }
-}
-
-/* Override for Skills Width */
-.about-page .skill {
-  max-width: 100% !important;
-  padding: 0 10px;
-}
-
-/* Grid Layouts */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--spacing-md);
 }
 
