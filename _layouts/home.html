@@ -37,35 +37,5 @@
             transform: rotate(0deg);
         }
 
-        100% {
-            transform: rotate(0deg);
-        }
-    }
-</style>
 
-<body>
-    <canvas id="cyber-canvas"></canvas>
-    {% include navbar.html %}
-
-    <div class="intro-wrap">
-        <div class="container">
-            <div class="intro-content">
-                <h1>Hi, I'm Tej <span class="wave-hand">👋</span></h1>
-                <div style="min-height: 2em; display: flex; align-items: center; justify-content: center;">
-                    <h2 class="typing"></h2>
-                </div>
-                <div class="mt-2">
-                    <a href="/about/" class="btn btn-primary">About Me</a>
-                    <a href="https://www.linkedin.com/in/iamtejkumar" target="_blank"
-                        class="btn btn-outline">LinkedIn</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {% include footer.html %}
-    <script src="/assets/js/text_typing.js"></script>
-    <script src="/assets/js/cyber-bg.js?v={{ site.time | date: '%s' }}"></script>
-</body>
-
-</html>
+        </html>
