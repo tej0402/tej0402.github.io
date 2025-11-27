@@ -218,12 +218,133 @@ nav:hover {
 .social-media {
   display: flex;
   justify-content: center;
+  gap: var(--spacing-sm);
+  list-style: none;
+  margin-bottom: var(--spacing-sm);
+}
+
+.social-media-icon a {
+  color: var(--text-light);
+  font-size: 1.5rem;
+  transition: var(--transition-normal);
+}
+
+.social-media-icon a:hover {
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* Components */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  text-decoration: none;
+  border: 2px solid transparent;
+  /* Default transparent border */
+}
+
+.btn-primary {
+  background: var(--gradient-main);
+  color: white;
+  border: none;
+  /* No border for primary */
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  color: white;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  /* Visible border for outline */
+  color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Hero Section (Home) */
+.intro-wrap {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+/* Animated Background Image */
+.intro-wrap::before {
+  content: '';
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: url('../img/home.jpg');
   background-size: cover;
+  background-position: center;
+  z-index: -2;
+  animation: kenBurns 20s ease-in-out infinite alternate;
+}
+
+/* Pulsing Gradient Overlay */
+.intro-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Much more transparent gradient */
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.3), rgba(139, 92, 246, 0.2), rgba(6, 182, 212, 0.2));
+  z-index: -1;
+  animation: gradientPulse 8s ease infinite alternate;
+}
+
+@keyframes kenBurns {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes gradientPulse {
+  0% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   object-fit: cover;
   border: 4px solid white;
   box-shadow: var(--shadow-md);
@@ -254,6 +375,43 @@ nav:hover {
 }
 
 .time {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+.skill-bar {
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  /* Visible background for empty bar */
+  border-radius: 5px;
+  overflow: hidden;
+  /* Ensure progress bar stays inside */
+  margin-top: 5px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.skill-progress {
+  height: 100%;
+  background: var(--gradient-main);
+  border-radius: 5px;
+  width: 0;
+  /* Start at 0 for animation */
+  transition: width 1.5s ease-out;
+  /* Smooth animation */
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.card,
+.category-box {
+  background: var(--bg-secondary);
+  padding: var(--spacing-md);
   border-radius: 10px;
   box-shadow: var(--shadow-sm);
   transition: var(--transition-normal);
