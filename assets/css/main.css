@@ -44,46 +44,6 @@
 }
 
 /* Reset & Base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-main);
-  color: var(--text-color);
-  background-color: var(--bg-color);
-  transition: var(--transition-fast);
-}
-
-a:hover {
-  color: var(--secondary-color);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Layout */
-.main-container {
-  max-width: 900px;
-  margin: 80px auto var(--spacing-lg);
-  padding: 0 var(--spacing-sm);
-  width: 100%;
-  flex: 1;
-}
-
-h1,
-h2,
-h3,
 h4,
 h5,
 h6 {
