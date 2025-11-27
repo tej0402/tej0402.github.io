@@ -72,20 +72,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-a:hover {
-  color: var(--secondary-color);
-}
-
-img {
-
-  h5,
-  h6 {
-    font-family: var(--font-heading);
-    color: var(--text-color);
-    margin-bottom: var(--spacing-sm);
-  }
 
   h1 {
     font-size: 2.5rem;
