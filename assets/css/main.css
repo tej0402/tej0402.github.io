@@ -916,6 +916,201 @@ nav:hover {
   margin: 80px auto var(--spacing-lg);
   padding: 0 var(--spacing-sm);
   width: 100%;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.skill-bar {
+  height: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.skill-progress {
+  height: 100%;
+  background: var(--gradient-main);
+  border-radius: 5px;
+  width: 0;
+  transition: width 1.5s ease-out;
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.card,
+.category-box {
+  background: var(--bg-secondary);
+  padding: var(--spacing-md);
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover,
+.category-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+  border-color: var(--primary-color);
+}
+
+.category-box img {
+  height: 60px;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: var(--spacing-sm);
+}
+
+.mt-2 {
+  margin-top: var(--spacing-md);
+}
+
+.mb-1 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Progress Bar */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: var(--gradient-main);
+  z-index: 1001;
+  transition: width 0.2s ease;
+}
+
+/* Scroll Up Button */
+#scrollUp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: var(--gradient-main);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: var(--shadow-md);
+  z-index: 999;
+  transition: var(--transition-normal);
+}
+
+#scrollUp:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Scroll Animations */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Quote Styles for Certifications */
+.quote {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid var(--primary-color);
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0 10px 10px 0;
+  transition: var(--transition-normal);
+}
+
+.quote:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.quote-text {
+  margin: 0;
+  font-style: italic;
+  color: var(--text-light);
+}
+
+/* Certifications Section */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+}
+
+.cert-card:hover::before {
+  opacity: 1;
+}
+
+.cert-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-sm);
+  background: var(--gradient-main);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cert-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: var(--spacing-xs);
+}
+
+.cert-issuer {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 80px auto var(--spacing-lg);
+  padding: 0 var(--spacing-sm);
+  width: 100%;
   flex: 1;
   position: relative;
   z-index: 1;
@@ -935,4 +1130,33 @@ nav:hover {
   /* Blur and dim the background for better text readability */
   filter: blur(3px);
   opacity: 0.4;
+}
+
+/* Compact About Page */
+.about-page {
+  margin-top: 60px !important;
+  margin-bottom: 2rem !important;
+}
+
+.about-page h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.about-page .timeline-item {
+  margin-bottom: 1rem;
+}
+
+.about-page .grid-2 {
+  gap: 1rem;
+}
+
+.about-page .card,
+.about-page .category-box {
+  padding: 1rem;
+}
+
+.about-page .skill-bar {
+  margin-bottom: 0.5rem;
 }
