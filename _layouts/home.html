@@ -1,6 +1,7 @@
 {% include header.html %}
 
 <body>
+    <canvas id="cyber-canvas"></canvas>
     {% include navbar.html %}
 
     <div class="intro-wrap">
@@ -19,6 +20,7 @@
 
     {% include footer.html %}
     <script src="/assets/js/text_typing.js"></script>
+    <script src="/assets/js/cyber-bg.js?v={{ site.time | date: '%s' }}"></script>
 </body>
 
 </html>
