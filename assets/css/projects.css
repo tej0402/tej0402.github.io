@@ -1,11 +1,12 @@
 @import "main.css";
-.project-wrapper{
+
+.project-wrapper {
     margin-bottom: 20px;
     padding: 0;
     padding-bottom: 30%;
 }
 
-.project-title{
+.project-title {
     text-align: center;
     position: relative;
     font-size: 1.6rem;
@@ -14,10 +15,11 @@
     margin-bottom: 10px;
     letter-spacing: 1px;
     font-weight: bold;
+    color: var(--text-color);
 }
 
-.project-title::after{
-    content:"";
+.project-title::after {
+    content: "";
     position: absolute;
     margin: auto;
     left: 0;
@@ -25,31 +27,32 @@
     right: 0;
     width: 40%;
     height: 0.20rem;
-    background-color: var(--color2);
+    background-color: var(--secondary-color);
 }
 
-.tech-stack-wrapper{
+.tech-stack-wrapper {
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
-.tech-stack{
+.tech-stack {
     font-weight: 800;
     margin-bottom: 10px;
     font-size: 1.4rem;
+    color: var(--text-color);
 }
 
-.project-image-wrapper{
-    border-radius: 15px;    
+.project-image-wrapper {
+    border-radius: 15px;
     position: relative;
     padding-bottom: 55%;
     background-color: rgb(12, 12, 12);
-    box-shadow:0 0 50000px var(--greycolor);
+    box-shadow: var(--shadow-md);
     overflow: hidden;
 }
 
-.project-image{
+.project-image {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -61,67 +64,76 @@
     transition: all 250ms ease-in-out;
 }
 
-.project-image:hover{
-   opacity: 0.7;
+.project-image:hover {
+    opacity: 0.7;
 }
 
-.project-container{
+.project-container {
     position: relative;
     padding: 1.25rem;
     margin: -2rem auto;
     max-width: 90%;
-    border-radius: 100px;
-    box-shadow:0 0 20px var(--greycolor);
-    background-color: rgb(252, 252, 252);
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    background: rgba(30, 41, 59, 0.9);
+    /* Dark slate with opacity */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
     height: 100%;
     z-index: 10;
 }
 
-.project-details{
+.project-details {
     text-align: justify;
+    color: var(--text-color);
 }
 
 @media screen and (min-width: 500px) {
-    .project-container{
+    .project-container {
         margin: -4rem auto;
     }
 
-    .project-wrapper{
+    .project-wrapper {
         padding: 0 20px;
         padding-bottom: 20%;
     }
 }
 
-.project-links{
+.project-links {
     display: flex;
     flex-wrap: wrap;
     padding: 1rem 0;
     justify-content: space-evenly;
 }
 
-.link-btn{
+.link-btn {
     display: flex;
     padding: 10px;
     margin: 5px;
-    border: black 2px solid;
+    border: 2px solid var(--primary-color);
     border-radius: 20px;
     cursor: pointer;
     align-items: center;
     justify-content: space-around;
-    box-shadow:2px 2px 5px var(--greycolor);
+    box-shadow: var(--shadow-sm);
     transition: all 250ms ease-in-out;
+    color: var(--text-color);
+    background: rgba(255, 255, 255, 0.05);
 }
 
-.link-btn:hover{
-    box-shadow:5px 5px 15px var(--greycolor);
-    background-color: none;
+.link-btn:hover {
+    box-shadow: var(--shadow-md);
+    background: var(--primary-color);
+    color: white;
 }
 
-.link-btn-icon{
+.link-btn-icon {
     width: 2rem;
     margin: 0;
 }
 
-.link-btn-text{
-    padding-left:10px
+.link-btn-text {
+    padding-left: 10px;
 }
