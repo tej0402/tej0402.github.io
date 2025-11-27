@@ -607,25 +607,6 @@ nav:hover {
 
 /* Hover effect for dot */
 .timeline-item:hover::before {
-  background: var(--accent-color);
-  box-shadow: 0 0 15px var(--accent-color);
-}
-
-.timeline-date {
-  font-size: 0.9rem;
-  color: var(--accent-color);
-  margin-bottom: 0.5rem;
-  display: block;
-  font-weight: 600;
-}
-
-/* Restored Skills Styles */
-.skill {
-  margin-bottom: 1.5rem;
-}
-
-.skill-name {
-  display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
   color: var(--text-color);
