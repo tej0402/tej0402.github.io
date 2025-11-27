@@ -1,31 +1,50 @@
-10% {
-transform: rotate(14deg);
-}
+{% include header.html %}
 
-20% {
-transform: rotate(-8deg);
-}
+<style>
+    /* Wave Animation Force */
+    .wave-hand {
+        display: inline-block;
+        animation: wave 2.5s infinite;
+        transform-origin: 70% 70%;
+        -webkit-text-fill-color: initial;
+        /* Restore emoji color */
+        text-shadow: none;
+        /* Remove text shadow if any */
+    }
 
-30% {
-transform: rotate(14deg);
-}
+    @keyframes wave {
+        0% {
+            transform: rotate(0deg);
+        }
 
-40% {
-transform: rotate(-4deg);
-}
+        10% {
+            transform: rotate(14deg);
+        }
 
-50% {
-transform: rotate(10deg);
-}
+        20% {
+            transform: rotate(-8deg);
+        }
 
-60% {
-transform: rotate(0deg);
-}
+        30% {
+            transform: rotate(14deg);
+        }
 
-100% {
-transform: rotate(0deg);
-}
-}
+        40% {
+            transform: rotate(-4deg);
+        }
+
+        50% {
+            transform: rotate(10deg);
+        }
+
+        60% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
 </style>
 
 <body>
