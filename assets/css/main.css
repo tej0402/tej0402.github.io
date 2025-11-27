@@ -215,29 +215,6 @@ nav:hover {
   font-weight: 600;
   text-align: center;
   cursor: pointer;
-  transition: var(--transition-normal);
-  text-decoration: none;
-  border: 2px solid transparent;
-}
-
-.btn-primary {
-  background: var(--gradient-main);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: var(--spacing-md);
-  margin-bottom: var(--spacing-lg);
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  padding: var(--spacing-md);
-  z-index: 1;
-}
-
-.intro-content {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
