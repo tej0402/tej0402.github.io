@@ -21,12 +21,12 @@ const navToggle = () => {
 navToggle();
 
 const scrollUpBtn = document.querySelector('#scrollUp');
-const progressBar = document.querySelector('.progress-bar');
+const progressBar = document.querySelector('#progress-bar');
 window.onscroll = () => {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
     if (winScroll > 20 || winScroll > 20) {
-        scrollUpBtn.style.display = "block";
+        scrollUpBtn.style.display = "flex";
     } else {
         scrollUpBtn.style.display = "none";
     }
@@ -39,29 +39,6 @@ window.onscroll = () => {
 function topFunction() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
-const faders = document.querySelectorAll('.fade-in');
-
-const appearOptions = {
-    root: null, // it is the viewport
-    threshold: 0,
-    rootMargin: "0px 0px -100px 0px" //negative pulls the margin inside from the corner
-};
-
-const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("appear");
-            appearOnScroll.unobserve(entry.target);
-        }
-        else
-            return;
-    });
-}, appearOptions);
-
-faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-});
 
 // Scroll Animations using Intersection Observer
 const observerOptions = {
@@ -80,7 +57,8 @@ const observer = new IntersectionObserver((entries, observer) => {
 }, observerOptions);
 
 // Target elements to animate
-document.querySelectorAll('.card, .category-box, .timeline-item, h2, .intro-wrap > *').forEach((el) => {
+const targets = document.querySelectorAll('.fade-in-section, .card, .category-box, .timeline-item, h2, .intro-wrap > *');
+targets.forEach((el) => {
     el.classList.add('fade-in-section');
     observer.observe(el);
 });
