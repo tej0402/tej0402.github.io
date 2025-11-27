@@ -222,26 +222,6 @@ nav:hover {
 
 .btn-primary {
   background: var(--gradient-main);
-  color: white;
-  border: none;
-  box-shadow: var(--shadow-sm);
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  color: white;
-}
-
-.btn-outline {
-  background: transparent;
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-}
-
-/* Hero Section (Home) */
-.intro-wrap {
-  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
