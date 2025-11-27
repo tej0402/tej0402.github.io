@@ -210,19 +210,6 @@ nav:hover {
 /* Components */
 .btn {
   display: inline-block;
-  padding: 0.8rem 1.5rem;
-  border-radius: 50px;
-  font-weight: 600;
-  text-align: center;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.typing {
-  font-family: 'Courier New', Courier, monospace;
-  color: var(--accent-color);
   text-shadow: 0 0 10px var(--accent-color);
   border-right: 3px solid var(--accent-color);
   padding-right: 5px;
