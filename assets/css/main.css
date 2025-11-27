@@ -456,10 +456,16 @@ nav:hover {
 }
 
 /* Glassmorphism Utilities */
-.glass {
-  background: rgba(30, 41, 59, 0.7);
-  /* Semi-transparent slate 800 */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+transition: var(--transition-normal);
+}
+
+.quote:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.quote-text {
+  margin: 0;
+  font-style: italic;
+  color: var(--text-light);
 }
